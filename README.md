@@ -1,4 +1,4 @@
-# MD5 Hashing Algorithm Library
+# MD5 Hash Library
 
 While there are other implementations of the MD5 hashing algorithm, I wrote this
 library with the intention of being used on embedded platforms (such as Arduino).
@@ -7,7 +7,7 @@ However, it is not restricted to Arduino.
 I can't take credit for the algorithm implementation itself. I mostly ripped that
 from [here](https://github.com/tzikis/ArduinoMD5/). I had issues with that library
 mainly related to it's use of `malloc` and general bad OOP principles. This library
-should be more straitforward to use and has no dynamically allocated memory.
+should be more straightforward to use and has no dynamically allocated memory.
 
 ## Principles
 
@@ -82,9 +82,6 @@ the entire buffer in memory at once.
 #include <iostream>
 #include <fstream>
 #include <md5.h>
-
-// Read data from somewhere... could be anywhere
-size_t read_chunk(unsigned char* buffer, size_t count);
 
 int main(int argc, char** argv)
 {

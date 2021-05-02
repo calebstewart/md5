@@ -2,9 +2,6 @@
 #include <fstream>
 #include <md5.h>
 
-// Read data from somewhere... could be anywhere
-size_t read_chunk(unsigned char* buffer, size_t count);
-
 int main(int argc, char** argv)
 {
   char digest[33];
